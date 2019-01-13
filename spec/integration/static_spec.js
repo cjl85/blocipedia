@@ -6,7 +6,7 @@ describe("routes : static", () => {
 
   describe("GET /", () => {
 
-    it("should return status code 200 and have 'Welcome to Blocipedia in the body of response'", (done) => {
+    it("should return status code 200 and say 'Welcome to Blocipedia'", (done) => {
 
       request.get(base, (err, res, body) => {
         expect(res.statusCode).toBe(200);
