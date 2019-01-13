@@ -2,7 +2,7 @@
   "name": "blocipedia-node",
   "version": "1.0.0",
   "scripts": {
-    "test": "Bloc Wikipedia",
+    "test": "Blocipedia",
     "start": "node src/server.js"
   },
   "repository": {
