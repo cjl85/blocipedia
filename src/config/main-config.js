@@ -9,8 +9,9 @@ const flash = require("express-flash");
 const passportConfig = require("./passport-config");
 
 module.exports = {
-  init(){
+  init(app, express){
 
+  app.use(expressValidator());
   app.use(logger('dev'));
   }
 };
