@@ -1,20 +1,25 @@
 'use strict';
 
 module.exports = (sequelize, DataTypes) => {
+
+  let length = {length: 3};
+   let email = {isEmail: true};
+
   let User = sequelize.define('User', {
     username: {
 	      type: DataTypes.STRING,
-	 allowNull: false
+	 allowNull: false,
+    validate: length
     },
     password: {
 	      type: DataTypes.STRING,
  	 allowNull: false
+    validate: length
     },
     email: {
 	     type: DataTypes.STRING,
 	allowNull: false,
-	 validate: {
-	  isEmail: { msg: "must be a valid email" }
+	 validate: email
 	}
     },
   }, {});
