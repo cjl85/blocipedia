@@ -7,6 +7,10 @@ module.exports = {
     res.render("users/sign_up");
   }
 
+  signIn(req, res, next){
+    res.render("users/sign_in");
+  }
+
   create(req, res, next){
 //#1
      let newUser = {
