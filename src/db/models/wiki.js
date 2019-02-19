@@ -1,9 +1,3 @@
-<<<<<<< HEAD
-classMethods: {
-       associate: function(models) {
-           // Add the correct association and relationship
-       }
-=======
 'use strict';
 module.exports = (sequelize, DataTypes) => {
   var Wiki = sequelize.define('Wiki', {
@@ -30,4 +24,3 @@ module.exports = (sequelize, DataTypes) => {
   };
   return Wiki;
 };
->>>>>>> wiki
